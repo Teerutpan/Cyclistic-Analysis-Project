@@ -22,9 +22,9 @@ Moreno has set a clear goal: Design marketing strategies aimed at converting cas
 2.	Insights gained from this analysis will help marketing teams develop strategies and use digital media to persuade more casual drivers to become members.
 
 #### key stakeholders
-- **Lily Moreno:** The director of marketing and your manager.
+- **Lily Moreno :** The director of marketing and your manager.
 - **Cyclictic marketing analytics team :** team of data analysts who are responsible for collecting, analyzing, and reporting data that helps guide Cyclistic marketing strategy.
-- **Cyclistic executive team:** The notoriously detail-oriented executive team who will decide whether to approve the recommended marketing program.
+- **Cyclistic executive team :** The notoriously detail-oriented executive team who will decide whether to approve the recommended marketing program.
 
 ## Prepare
 I will use Cyclistic’s historical trip data to analyze and identify trends. Note: The datasets have a different name because Cyclistic is a fictional company. This is public data that I can use to explore how different customer types are using Cyclistic bikes. I'll be using data from November 2022 to October 2023. The data is organized into individual .csv files, with each file corresponding to a specific month. After preliminary inspection I can confidently confirm that the source data is Reliable, Original, Comprehensive, Current and Cited.
@@ -37,7 +37,7 @@ I chose R studio desktop for analysis because it’s a large dataset making it i
 4.	Inspect the new table that has been created.
 
 ## Process
-Before processing data with R studio desktop, I choose one month’s data (Dec 2022) file name 202212-divvy-tripdata.csv for sampling analysis with google sheet to familiar with data before performing actual analysis. 
+Before processing yearly data with R studio desktop, I choose one month’s data (Dec 2022) file name 202212-divvy-tripdata.csv for sampling analysis with google sheet to familiar with data before performing actual analysis. 
 
 #### Process for sampling data(Dec 2022) by google sheet.
 After cleaning data in google sheet (delete missing value, duplicate rows).
@@ -46,8 +46,26 @@ I created more three columns.
 2.	“day_of_week” for calculate the day of the week that each ride started using the “WEEKDAY” command. Google sheet command : WEEKDAY(date, [type])
 3.	“started_at(H)” for creating hour in day from the date. Google sheet command : TEXT(number, format)
 
+   
+
+#### Process for all data (Nov 2022 - Oct 2023) by R studio desktop.
+After that I start processing data with R studio desktop for Nov 2022 – Oct 2023 as the method below.
+Clean up and add data to prepare for analysis. After inspecting the new table that has been created, I start to process the data as step below.
+1. Select analysis column only, including rideable_type, started_at, start_station_name, ended_at, and member_casual.
+2. Check for the missing values.
+3. Remove all the missing values.
+4. Check for duplicate rows.
+5. Remove duplicate rows.
+6. Add columns that list the date, month, day, and year of each ride. This will allow us to aggregate ride data for each month, day, or year.
+7. Create column ride length to calculate duration since the data did not have the trip duration.
+8. Convert "ride_length" from Factor to numeric so we can run calculations on the data.
+9. There are some rides where trip duration shows up as negative, including several hundred rides where Divvy took bikes out of circulation for quality control reasons. I want to delete these rides by filter only “ride_length” >= 1 and <= 480 minutes.
+10. Notice that the days of the week and month are out of order so, let's fix that.
+
+## Analyze & Share
+
 #### Analyze and create visualization for sampling data (Dec 2022) by google sheet.
-Then I proceed to the basic sampling analyze step for one month (Dec 2022). The result is shown in chart below.
+I proceed to the basic sampling analyze step for one month (Dec 2022). The result is shown in chart below.
 
 ##### Number of Rides by User(Dec 2022)
 ![Number of Rides by User (Dec 2022)](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/98337a7e-7884-4f5e-b7ee-02213993d873)
@@ -76,8 +94,8 @@ Then I proceed to the basic sampling analyze step for one month (Dec 2022). The 
 ##### Top 15 favorite station for member (Dec 2022)
 ![Top 15 favorite station for member(Dec 2022)](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/108b251a-570a-42ea-b693-d64ced83dd2c)
 
-#### Analyze sampling data from google sheet.
-Key findings (Dec 2022)
+#### After analyze sampling data from google sheet. I found both the similarities and differences between member and usual including insights gained from the analysis as below.
+##### Key findings from sampling data analysis (Dec 2022)
 1.	Member take rides approximately three times as much as Casual during the specified period. Member take rides 136,754 times, while Casual take rides 44,720 times.
 2.	Casual’s rides duration time is slightly longer than Member during the specified period. Casual’s rides duration time around 12.14 minutes, while Member’s rides duration time around 9.57 minutes.
 3.	Casual prefer to use electric bicycles more than classic bicycles, while Member uses both types of bicycles almost equally.
@@ -86,33 +104,19 @@ Key findings (Dec 2022)
 6.	Casual’s average duration of bike is peak on 10.00 – 15.00 around 14 minutes, while Member’s average duration of bike is around 10 minutes throughout the day.
 7.	Both Member and Casual’s average duration of bike is more on weekends. Casual’s average duration of bike on weekends is around 13 minutes while Member is around 10 minutes.
 8.	Top 5 favorite station for member are : 
-1.	Kingsbury St & Kinzie St
-2.	Clinton St & Washington Blvd
-3.	Clark St & Elm St
-4.	State St & Chicago Ave
-5. Clinton St & Madison St
-9. Top 5 favorite station for casual are
-1. Shedd Aquarium
-2. Streeter Dr & Grand Ave
-3. Millennium Park
-4. DuSable Lake Shore Dr & Monroe St
-5. Kingsbury St & Kinzie St
+    * Kingsbury St & Kinzie St 
+    * Clinton St & Washington Blvd
+    * Clark St & Elm St
+    * State St & Chicago Ave
+    * Clinton St & Madison St
+9. Top 5 favorite station for casual are :
+    * Shedd Aquarium
+    * Streeter Dr & Grand Ave
+    * Millennium Park
+    * DuSable Lake Shore Dr & Monroe St
+    * Kingsbury St & Kinzie St
 
-#### Process for all data (Nov 2022 - Oct 2023) by R studio desktop.
-After that I start processing data with R studio desktop for Nov 2022 – Oct 2023 as the method below.
-Clean up and add data to prepare for analysis. After inspecting the new table that has been created, I start to process the data as step below.
-1. Select analysis column only, including rideable_type, started_at, start_station_name, ended_at, and member_casual.
-2. Check for the missing values.
-3. Remove all the missing values.
-4. Check for duplicate rows.
-5. Remove duplicate rows.
-6. Add columns that list the date, month, day, and year of each ride. This will allow us to aggregate ride data for each month, day, or year.
-7. Create column ride length to calculate duration since the data did not have the trip duration.
-8. Convert "ride_length" from Factor to numeric so we can run calculations on the data.
-9. There are some rides where trip duration shows up as negative, including several hundred rides where Divvy took bikes out of circulation for quality control reasons. I want to delete these rides by filter only “ride_length” >= 1 and <= 480 minutes.
-10. Notice that the days of the week and month are out of order so, let's fix that.
-
-## ANALYZE & SHARE
+#### Analyze and create visualization for yearly data (Nov 2022 - Oct 2023) by R studio desktop.
 1. Conduct descriptive analysis by compare members and casual users.
 2. Analyze and create visualization in the same command with pipe operator.
 
@@ -149,8 +153,8 @@ Clean up and add data to prepare for analysis. After inspecting the new table th
 ##### Top 15 favorite station for member (Nov 2022 - Oct 2023)
 ![Rplot11](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/8716a7fe-38d9-4b68-a752-6c311a5ae82a)
 
-### After analyzing and creating visualization, I found both the similarities and differences between member and usual including insights gained from the analysis as below.
-Key findings (Nov 2022 – Oct 2023)
+#### After analyze yearly data by R studio desktop. I found both the similarities and differences between member and usual including insights gained from the analysis as below.
+##### Key findings from yearly data analysis (Nov 2022 – Oct 2023)
 1.	Member take rides almost twice as much as Casual during the specified period. Member take rides 2,983,881 times, while Casual take rides 1,687,261 times.
 2.	Casual’s rides duration time almost twice as much as Member during the specified period. Casual’s rides duration time around 20.9 minutes, while Member’s rides duration time around 12.1 minutes.
 3.	Members prefer to use classic bicycles more than electric bicycles, while Casual uses both types of bicycles almost equally.
@@ -160,20 +164,20 @@ Key findings (Nov 2022 – Oct 2023)
 7.	Casual’s average duration of bike is peak on 10.00 – 15.00 around 25 minutes, while Member’s average duration of bike is around 12 minutes throughout the day.
 8.	Both Member and Casual’s average duration of bike is more on weekends. Casual’s average duration of bike on weekends is around 24 minutes while Member is around 13 minutes.
 9.	Casual’s average duration of bike is highest from April to October, while Member’s average duration of bike is almost all year round, with April to October being longer than other months, but there is not much difference.
-Top 5 favorite station for member are : 
-1. Kingsbury St & Kinzie St     
-2. Clinton St & Washington Blvd 
-3. Clark St & Elm St            
-4. Wells St & Concord 
-5. University Ave & 57th St     
-11. Top 5 favorite station for casual are
-1. Streeter Dr & Grand Ave            
-2. DuSable Lake Shore Dr & Monroe St  
-3. Michigan Ave & Oak St              
-4. DuSable Lake Shore Dr & North Blvd 
-5. Millennium Park                    
+10. Top 5 favorite station for member are : 
+    * Kingsbury St & Kinzie St
+    * Clinton St & Washington Blvd
+    * Clark St & Elm St            
+    * Wells St & Concord 
+    * University Ave & 57th St     
+11. Top 5 favorite station for casual are :
+    * Streeter Dr & Grand Ave    
+    * DuSable Lake Shore Dr & Monroe St
+    * Michigan Ave & Oak St             
+    * DuSable Lake Shore Dr & North Blvd 
+    * Millennium Park                    
 
-Compare data analyze between sampling data (Dec 2022) analyzed from google sheet and all data (Nov 2022 – October 2023) analyzed from R studio desktop gives the result in the same direction. But some results are not exactly the same. In case we don’t have data for the entire year. We can use monthly data for analysis. But it is better to use long-term data to get more accurate results.
+- **Compare data analyze between sampling data (Dec 2022) analyzed from google sheet and yearly data (Nov 2022 – October 2023) analyzed from R studio desktop gives the result in the same direction. But some results are not exactly the same. In case we don’t have data for the entire year. We can use monthly data for analysis. But it is better to use long-term data to get more accurate results.**
 
 ## Act 
 Based on data analysis Casual normally use bike for exercise and travel while Member use bike to go to work. To convert casual riders into annual members. A new marketing strategy should follow the sections below.
