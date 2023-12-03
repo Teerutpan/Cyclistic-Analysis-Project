@@ -21,7 +21,7 @@ Moreno has set a clear goal: Design marketing strategies aimed at converting cas
 1.	Analyze the data to understand how annual members and casual riders use Cyclistic bikes differently.
 2.	Insights gained from this analysis will help marketing teams develop strategies and use digital media to persuade more casual drivers to become members.
 
-#### key stakeholders
+#### Key Stakeholders
 - **Lily Moreno :** The director of marketing and your manager.
 - **Cyclictic marketing analytics team :** team of data analysts who are responsible for collecting, analyzing, and reporting data that helps guide Cyclistic marketing strategy.
 - **Cyclistic executive team :** The notoriously detail-oriented executive team who will decide whether to approve the recommended marketing program.
