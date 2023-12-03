@@ -45,6 +45,8 @@ I created more three columns.
 1.	“ride_length” for calculate the length of each ride by subtracting the column “started_at” from the column “ended_at”. 
 2.	“day_of_week” for calculate the day of the week that each ride started using the “WEEKDAY” command. Google sheet command : WEEKDAY(date, [type])
 3.	“started_at(H)” for creating hour in day from the date. Google sheet command : TEXT(number, format)
+   
+   ![1](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/84f4a5b0-3f4d-4564-b2c2-0cf5e0654939)
 
    
 
@@ -181,10 +183,11 @@ I proceed to the basic sampling analyze step for one month (Dec 2022). The resul
 
 ## Act 
 Based on data analysis Casual normally use bike for exercise and travel while Member use bike to go to work. To convert casual riders into annual members. A new marketing strategy should follow the sections below.
-1.	Since Casual’s average duration and number of bikes is highest from April to October. Therefore, marketing campaigns should be started before April.
-2.	Since Casual’s rides duration time almost twice as much as Member. Therefore, marketing campaigns should focus on time-based costs. For example, there may be promotions such as the longer the rental period, the cheaper it is.
-3.	Since Casual’s number of rides on weekends more than weekdays and Casual’s average duration time is peak on 10.00 – 15.00. Marketing campaigns should therefore offer weekend memberships and also daytime memberships.
-4.	A marketing campaign should be created about the benefits of using bicycles for work. For example, everyone will be able to exercise every day while traveling to work. on all platforms, including websites, social media, brochures, and concentrate on the top 10 favorite stations for Casual.
+
+#### 1.	Since Casual’s average duration and number of bikes is highest from April to October. Therefore, marketing campaigns should be started before April.
+#### 2.	Since Casual’s rides duration time almost twice as much as Member. Therefore, marketing campaigns should focus on time-based costs. For example, there may be promotions such as the longer the rental period, the cheaper it is.
+#### 3.	Since Casual’s number of rides on weekends more than weekdays and Casual’s average duration time is peak on 10.00 – 15.00. Marketing campaigns should therefore offer weekend memberships and also daytime memberships.
+#### 4.	Marketing campaign should be created about the benefits of using bicycles for work. For example, everyone will be able to exercise every day while traveling to work. on all platforms, including websites, social media, brochures, and concentrate on the top 10 favorite stations for Casual.
 
 ## Wrap-up
 After finishing the Cyclistic bike-share case study using the steps from the ask, prepare, process, analyze, share, and act. This case study will demonstrate these fundamental skills what I have learned from the Google Data Analytics Certificate. Thank you Google for excellent course, I learned a lot from you and I really recommend this course for all who are interested in data analytics field.
