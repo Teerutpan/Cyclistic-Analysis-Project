@@ -1,4 +1,4 @@
-# Cyclistic-Analysis-Project
+# Cyclistic Data Analysis Project
 This is my first data analysis project from Google Data Analytics Course from Coursera.
 
 ## Introduction
@@ -22,9 +22,9 @@ Moreno has set a clear goal: Design marketing strategies aimed at converting cas
 2.	Insights gained from this analysis will help marketing teams develop strategies and use digital media to persuade more casual drivers to become members.
 
 #### key stakeholders
-Lily Moreno: The director of marketing and your manager.
-Cyclictic marketing analytics team : team of data analysts who are responsible for collecting, analyzing, and reporting data that helps guide Cyclistic marketing strategy.
-Cyclistic executive team: The notoriously detail-oriented executive team who will decide whether to approve the recommended marketing program.
+- **Lily Moreno:** The director of marketing and your manager.
+- **Cyclictic marketing analytics team :** team of data analysts who are responsible for collecting, analyzing, and reporting data that helps guide Cyclistic marketing strategy.
+- **Cyclistic executive team:** The notoriously detail-oriented executive team who will decide whether to approve the recommended marketing program.
 
 ## Prepare
 I will use Cyclistic’s historical trip data to analyze and identify trends. Note: The datasets have a different name because Cyclistic is a fictional company. This is public data that I can use to explore how different customer types are using Cyclistic bikes. I'll be using data from November 2022 to October 2023. The data is organized into individual .csv files, with each file corresponding to a specific month. After preliminary inspection I can confidently confirm that the source data is Reliable, Original, Comprehensive, Current and Cited.
@@ -49,9 +49,9 @@ I created more three columns.
 #### Analyze and create visualization for sampling data (Dec 2022) by google sheet.
 Then I proceed to the basic sampling analyze step for one month (Dec 2022). The result is shown in chart below.
 
-Number of Rides by User (Dec 2022)
-Average Duration of Rides by User (Dec 2022)
-Percentage of using Bicycle Type (Dec 2022)
+Number of Rides by User(Dec 2022)
+Average Duration of Rides by User(Dec 2022)
+Percentage of using Bicycle Type(Dec 2022)
 Number of Rides per 1 Hour (Dec 2022)
 Number of Rides - Day of Week (Dec 2022)
 Average Duration of Rides per 1 Hour (Dec 2022)
@@ -81,7 +81,7 @@ Key findings (Dec 2022)
 4. DuSable Lake Shore Dr & Monroe St
 5. Kingsbury St & Kinzie St
 
-## Process for all data (Nov 2022 - Oct 2023) by R studio desktop.
+#### Process for all data (Nov 2022 - Oct 2023) by R studio desktop.
 After that I start processing data with R studio desktop for Nov 2022 – Oct 2023 as the method below.
 Clean up and add data to prepare for analysis. After inspecting the new table that has been created, I start to process the data as step below.
 1. Select analysis column only, including rideable_type, started_at, start_station_name, ended_at, and member_casual.
