@@ -3,6 +3,7 @@
 
 # 1. PREPARE
 # Install required packages
+
 library(tidyverse)
 library(lubridate)
 
@@ -22,6 +23,7 @@ X202309 <- read_csv("C:/Users/teerutp/Desktop/Google Data Analytics/8.Capstone p
 X202310 <- read_csv("C:/Users/teerutp/Desktop/Google Data Analytics/8.Capstone project/202310-divvy-tripdata.csv")
 
 # Stack individual data frames into one big data frame
+
 btrips <- bind_rows(X202211, X202212, X202301, X202302, X202303, X202304, X202305,
                     X202306, X202307, X202308, X202309, X202310)
 
@@ -32,7 +34,9 @@ head(btrips)
 str(btrips)
 View(btrips)
 
-# 2. PROCESS - Clean up and add data to prepare for analysis
+# 2. PROCESS
+# Clean up and add data to prepare for analysis
+
 # Select analysis column only
 trip <- select(btrips, rideable_type, started_at, start_station_name, ended_at, member_casual)
 View(trip)
