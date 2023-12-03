@@ -49,15 +49,32 @@ I created more three columns.
 #### Analyze and create visualization for sampling data (Dec 2022) by google sheet.
 Then I proceed to the basic sampling analyze step for one month (Dec 2022). The result is shown in chart below.
 
-Number of Rides by User(Dec 2022)
-Average Duration of Rides by User(Dec 2022)
-Percentage of using Bicycle Type(Dec 2022)
-Number of Rides per 1 Hour (Dec 2022)
-Number of Rides - Day of Week (Dec 2022)
-Average Duration of Rides per 1 Hour (Dec 2022)
-Average Duration of Rides - Day of Week (Dec 2022)
-Top 15 favorite station for casual (Dec 2022)
-Top 15 favorite station for member (Dec 2022)
+##### Number of Rides by User(Dec 2022)
+![Number of Rides by User (Dec 2022)](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/98337a7e-7884-4f5e-b7ee-02213993d873)
+
+##### Average Duration of Rides by User(Dec 2022)
+![Average Duration of Rides by User (Dec 2022)](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/a17384c9-0549-478c-ae25-38300f217153)
+
+##### Percentage of using Bicycle Type(Dec 2022)
+![Rideable Type (Dec 2022)](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/8975ca1f-ff20-4bfa-b0be-e9f8358ee9b8)
+
+##### Number of Rides per 1 Hour (Dec 2022)
+![Number of Rides per 1 Hour (Dec 2022)](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/487e2056-09f0-4b46-ade5-0a03d2c38eba)
+
+##### Number of Rides - Day of Week (Dec 2022)
+![Number of Rides - Day of Week (Dec 2022)](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/0922beae-b3df-451e-88b0-f94cc368f4a5)
+
+##### Average Duration of Rides per 1 Hour (Dec 2022)
+![Average Duration of Rides per 1 Hour (Dec 2022)](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/4182ee4b-191e-433d-bda1-0530ba5c53fb)
+
+##### Average Duration of Rides - Day of Week (Dec 2022)
+![Average Duration of Rides - Day of Week (Dec 2022)](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/4f29216e-d63c-4f03-8737-52be490af726)
+
+##### Top 15 favorite station for casual (Dec 2022)
+![Top 15 favorite station for casual(Dec 2022)](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/277891b5-4164-4581-a359-c07543bd327b)
+
+##### Top 15 favorite station for member (Dec 2022)
+![Top 15 favorite station for member(Dec 2022)](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/108b251a-570a-42ea-b693-d64ced83dd2c)
 
 #### Analyze sampling data from google sheet.
 Key findings (Dec 2022)
@@ -99,17 +116,38 @@ Clean up and add data to prepare for analysis. After inspecting the new table th
 1. Conduct descriptive analysis by compare members and casual users.
 2. Analyze and create visualization in the same command with pipe operator.
 
-Number of Rides by User (Nov 2022 - Oct 2023)
-Average Duration of Rides by User (Nov 2022 - Oct 2023)
-Number of Rides by Bicycle Type (Nov 2022 - Oct 2023)
-Number of Rides per 1 Hour (Nov 2022 - Oct 2023)
-Number of Rides - Day of Week (Nov 2022 - Oct 2023)
-Number of Rides by Month (Nov 2022 - Oct 2023)
-Average Duration of Rides per 1 Hour (Nov 2022 - Oct 2023)
-Average Duration of Rides - Day of Week (Nov 2022 - Oct 2023)
-Average Duration of Rides by Month (Nov 2022 - Oct 2023)
-Top 15 favorite station for casual (Nov 2022 - Oct 2023)
-Top 15 favorite station for member (Nov 2022 - Oct 2023)
+##### Number of Rides by User (Nov 2022 - Oct 2023)
+![Rplot1](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/028f5e90-b2ca-4563-9ce5-58bef2952709)
+
+##### Average Duration of Rides by User (Nov 2022 - Oct 2023)
+![Rplot2](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/b87f774d-cc3c-4dd8-928a-61c10db55a34)
+
+##### Number of Rides by Bicycle Type (Nov 2022 - Oct 2023)
+![Rplot3](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/662cc040-9c8e-4b38-8ca1-3ed772037b5e)
+
+##### Number of Rides per 1 Hour (Nov 2022 - Oct 2023)
+![Rplot4](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/819e774e-0b57-48b5-815a-0be0168b6bf2)
+
+##### Number of Rides - Day of Week (Nov 2022 - Oct 2023)
+![Rplot5](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/3d9f5b01-85ef-4ced-870a-16b07b5cf441)
+
+##### Number of Rides by Month (Nov 2022 - Oct 2023)
+![Rplot6](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/07356115-ffa5-4296-ac33-14e310976662)
+
+##### Average Duration of Rides per 1 Hour (Nov 2022 - Oct 2023)
+![Rplot7](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/5ae99ec0-f3cf-4504-9a88-414c3f87f279)
+
+##### Average Duration of Rides - Day of Week (Nov 2022 - Oct 2023)
+![Rplot8](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/a9e56e25-f584-4256-bb9d-e8e9034ac931)
+
+##### Average Duration of Rides by Month (Nov 2022 - Oct 2023)
+![Rplot9](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/fa829924-d7d8-4c89-936b-63c606327bbf)
+
+##### Top 15 favorite station for casual (Nov 2022 - Oct 2023)
+![Rplot10](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/7565ff86-fe66-41da-b67b-7cd48c1ee050)
+
+##### Top 15 favorite station for member (Nov 2022 - Oct 2023)
+![Rplot11](https://github.com/Teerutpan/Cyclistic-Analysis-Project/assets/152750283/8716a7fe-38d9-4b68-a752-6c311a5ae82a)
 
 ### After analyzing and creating visualization, I found both the similarities and differences between member and usual including insights gained from the analysis as below.
 Key findings (Nov 2022 – Oct 2023)
